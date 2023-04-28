@@ -20,7 +20,7 @@ const FIREFOX_ADDON_URL =
 
 const acctAddr = acct => (acct ? acct.address : '')
 
-function Main(props) {
+function Main() {
   const {
     setCurrentAccount,
     state: { keyring, currentAccount },
@@ -63,7 +63,7 @@ function Main(props) {
       <Container>
         <Menu.Menu>
           <Image
-            src={`${process.env.PUBLIC_URL}/assets/substrate-logo.png`}
+            src={'/assets/substrate-logo.png'}
             size="mini"
           />
         </Menu.Menu>
@@ -108,7 +108,7 @@ function Main(props) {
   )
 }
 
-function BalanceAnnotation(props) {
+function BalanceAnnotation() {
   const { api, currentAccount } = useSubstrateState()
   const [accountBalance, setAccountBalance] = useState(0)
 

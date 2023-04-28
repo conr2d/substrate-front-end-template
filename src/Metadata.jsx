@@ -3,7 +3,7 @@ import { Grid, Modal, Button, Card } from 'semantic-ui-react'
 
 import { useSubstrateState } from './substrate-lib'
 
-function Main(props) {
+function Main() {
   const { api } = useSubstrateState()
   const [metadata, setMetadata] = useState({ data: null, version: null })
 

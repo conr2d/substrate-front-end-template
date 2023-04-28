@@ -64,7 +64,7 @@ function Main(props) {
         color="grey"
         floated="right"
         icon="erase"
-        onClick={_ => setEventFeed([])}
+        onClick={() => setEventFeed([])}
       />
       <Feed
         style={{ clear: 'both', overflow: 'auto', maxHeight: feedMaxHeight }}

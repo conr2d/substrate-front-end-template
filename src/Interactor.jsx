@@ -6,7 +6,7 @@ import { TxButton, TxGroupButton } from './substrate-lib/components'
 
 const argIsOptional = arg => arg.type.toString().startsWith('Option<')
 
-function Main(props) {
+function Main() {
   const { api, jsonrpc } = useSubstrateState()
   const [status, setStatus] = useState(null)
 

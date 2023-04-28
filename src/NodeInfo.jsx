@@ -3,7 +3,7 @@ import { Card, Icon, Grid } from 'semantic-ui-react'
 
 import { useSubstrateState } from './substrate-lib'
 
-function Main(props) {
+function Main() {
   const { api, socket } = useSubstrateState()
   const [nodeInfo, setNodeInfo] = useState({})
 

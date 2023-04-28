@@ -3,7 +3,7 @@ import { Table, Grid, Button, Label } from 'semantic-ui-react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { useSubstrateState } from './substrate-lib'
 
-export default function Main(props) {
+export default function Main() {
   const { api, keyring } = useSubstrateState()
   const accounts = keyring.getPairs()
   const [balances, setBalances] = useState({})
